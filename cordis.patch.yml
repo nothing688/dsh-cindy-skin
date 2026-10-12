@@ -1,0 +1,14 @@
+# dsh-cindy-skin bundle patch
+#
+# 只插入本插件自身，不改动任何其它插件条目。
+#
+# 皮肤本体全部在客户端（client.js）执行：
+#   · ctx.theme.overrideTokens('dsh-cindy-skin', TOKENS) —— 颜色 / 字体族 / 圆角数值 / 阴影 / 动效
+#   · 注入 Inter 的 @font-face（base64 内联，无外部请求）
+#   · 注入 --dsw-elevation-* 的子代覆盖（该族声明在 `body, body *` 上，inline 覆盖传不下去）
+#
+# 因此这里没有 disabled / config 操作，也不触碰 profile 的 cordis.patch.yml。
+
+- insert:
+    - id: dsh-cindy-skin
+      name: 'dsh-cindy-skin'

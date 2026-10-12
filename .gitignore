@@ -1,0 +1,25 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 构建与运行时产物
+*.log
+.tmp/
+_out/
+
+# 探针运行产物（截图 / DOM dump / 本地路径快照），不入库
+# 注意：p[0-9]* 而不是 p* —— 后者会连 package.json / package-lock.json 一起吃掉
+probe/pw/*.png
+probe/pw/*-out.json
+probe/pw/p[0-9]*.json
+probe/pw/*-err.txt
+
+# 参考克隆（第三方仓库，只读镜像，364MB）
+_ref_cindy/
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

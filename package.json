@@ -1,0 +1,55 @@
+{
+  "name": "dsh-cindy-skin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cindy 皮肤 for DSH Desktop — 以官方 ctx.theme 扩展点覆盖设计 token（Cindy 暖象牙/中性近黑色板、Inter 字体、12px 容器圆角、零阴影、150/200/250ms 动效），不修改 app.asar。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "fonts",
+    "src",
+    "README.md",
+    "LICENSE-Inter.txt"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "skin",
+    "cindy",
+    "deepseek-harness"
+  ],
+  "scripts": {
+    "build": "python src/build.py"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "dshTarget": "0.2.0-rc.2"
+}

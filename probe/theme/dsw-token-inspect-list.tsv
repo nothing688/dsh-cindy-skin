@@ -1,0 +1,15 @@
+name	description	valueType
+--dsw-alias-bg-base	Application base background.	CSS color
+--dsw-alias-bg-layer-1	Primary raised surface background.	CSS color
+--dsw-alias-bg-layer-2	Secondary nested surface background.	CSS color
+--dsw-alias-bg-overlay	Overlay and popover background.	CSS color
+--dsw-alias-border-l1	Primary subtle border.	CSS color
+--dsw-alias-border-l2	Secondary stronger border.	CSS color
+--dsw-alias-brand-primary	Primary brand accent.	CSS color
+--dsw-alias-label-primary	Primary text color.	CSS color
+--dsw-alias-label-secondary	Secondary text color.	CSS color
+--dsw-alias-state-error-primary	Primary error state color.	CSS color
+--dsw-alias-state-idle-primary	Primary inactive state color.	CSS color
+--dsw-alias-state-success-primary	Primary success state color.	CSS color
+--dsw-alias-state-warn-primary	Primary warning state color.	CSS color
+--dsw-specific-sidebar-fill	Sidebar column and title-row background.	CSS color

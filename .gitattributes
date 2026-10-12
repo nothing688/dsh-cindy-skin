@@ -1,0 +1,19 @@
+# 默认按文本处理并归一化为 LF；Windows 侧的 .py/.mjs 也用 LF 以便跨平台运行
+* text=auto eol=lf
+
+# 明确二进制，避免被当文本做行尾转换
+*.woff2 binary
+*.woff binary
+*.ttf binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.ico binary
+
+# 构建产物：在 GitHub 上折叠 diff，但不标记为后置生成
+client.js linguist-generated=true
+
+# 文档与数据按文本统计
+*.md text
+*.tsv text
+*.txt text

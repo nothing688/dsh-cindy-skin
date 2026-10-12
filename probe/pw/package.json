@@ -1,0 +1,9 @@
+{
+  "name": "dsh-cindy-skin-probes",
+  "private": true,
+  "description": "Read-only Playwright probes used while porting Cindy's design system onto DSH Desktop.",
+  "license": "MIT",
+  "dependencies": {
+    "playwright-core": "^1.64.0"
+  }
+}
